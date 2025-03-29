@@ -1,0 +1,5 @@
+Metrics,LinearRegression,KNeighborsRegressor,SVR,RandomForestRegressor,GradientBoostingRegressor,AutoML
+mae,1.52,1.6,1.44,1.49,1.49,1.46
+mse,4.51,5.14,4.48,4.56,4.61,4.41
+rmse,2.12,2.27,2.12,2.14,2.15,2.1
+r2,0.57,0.51,0.57,0.56,0.56,0.58
