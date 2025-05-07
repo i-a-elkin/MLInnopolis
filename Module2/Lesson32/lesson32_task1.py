@@ -162,8 +162,8 @@ if __name__ == "__main__":
     BASE_URL = "https://yandex.ru/images/search"
 
     DATASET_FOLDER = "C:/Users/ivana/MLInnopolis/Module2/Lesson32/dataset/"
-    QUERY = "brown bear"
-    LIMIT = 1200
+    QUERY = "ship"
+    LIMIT = 3000
 
     # Создаём папку для итоговых изображений
     create_folder_if_not_exists(DATASET_FOLDER)
@@ -172,7 +172,7 @@ if __name__ == "__main__":
     thumbnail_urls = get_thumbnail_urls(
         query=QUERY,
         limit=LIMIT,
-        delay=3,
+        delay=5,
         headless=False,
         geckodriver_path=GECKODRIVER_PATH,
         base_url=BASE_URL,
