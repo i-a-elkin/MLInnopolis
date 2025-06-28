@@ -20,4 +20,9 @@ __pycache__
 /Module4/Lesson57/data
 /Module4/Lesson58/data
 /Module4/Assessment4/training.csv
-FinalAssessment
+/FinalAssessment/artifacts_r0
+/FinalAssessment/artifacts_r1
+/FinalAssessment/hmdb51_data
+/FinalAssessment/swin3d_b.pth
+/FinalAssessment/swin3d_b.onnx
+/FinalAssessment/swin3d_b_fp16.onnx
