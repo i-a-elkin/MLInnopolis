@@ -95,4 +95,4 @@ class VideoTester:
         ) as f:
             json.dump(self.results, f, indent=4)
             print("Results are saved!")
-        print(f"Average accuracy: {self.results["average_accuracy"]:.4f}")
+        print(f"Average accuracy: {self.results['average_accuracy']:.4f}")

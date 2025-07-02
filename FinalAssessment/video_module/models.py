@@ -5,7 +5,6 @@ from torch import nn
 from torchvision.models.video import swin3d_b  # type: ignore
 
 import onnx
-from onnxconverter_common import float16  # type: ignore # pylint: disable=import-error
 
 from .utils import get_obj_names
 
@@ -49,7 +48,11 @@ def convert_onnx_fp16(checkpoint):
     """
     Converts an ONNX model to FP16 format.
     """
+    from onnxconverter_common import float16  # type: ignore # pylint: disable=import-outside-toplevel
+
     model = onnx.load(f"{checkpoint.replace('.pth', '').replace('.pt', '')}.onnx")
     model_fp16 = float16.convert_float_to_float16(model)
-    onnx.save(model_fp16, f"{checkpoint.replace('.pth', '').replace('.pt', '')}_fp16.onnx")
+    onnx.save(
+        model_fp16, f"{checkpoint.replace('.pth', '').replace('.pt', '')}_fp16.onnx"
+    )
     print("Model ONNX is converted to fp16!")
