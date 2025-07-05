@@ -26,3 +26,10 @@ __pycache__
 /FinalAssessment/swin3d_b.pth
 /FinalAssessment/swin3d_b.onnx
 /FinalAssessment/swin3d_b_fp16.onnx
+/Module4/Lesson59/train
+/Module4/Lesson59/train_masks
+/Module4/Lesson59/train.zip
+/Module4/Lesson59/train_masks.zip
+/Module4/Lesson59/images
+/Module4/Lesson59/masks
+/Module4/Lesson59/kaggle.json
